@@ -16,10 +16,10 @@ public class Main {
         System.out.println("«Значение переменной g с типом int равно " + g + "»" );
 
         // Задача №2
-        float x =27.12f;
+        float x = 27.12f;
         long y = 987_678_965_549L;
         double z = 2.786;
-        short h =569;
+        short h = 569;
         short r = -159;
         int k = 27_897;
         byte s = 67;
