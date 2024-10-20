@@ -21,7 +21,7 @@ public class Main {
         double doub = 2.786;
         short shor = 569;
         short stop = -159;
-        int in = 27_897;
+        int in = 27897;
         byte byt = 67;
 
         // Задача №3
