@@ -60,16 +60,47 @@ public class Main {
         System.out.println("«В школе, где " + totalClasses + " классов, нужно " + totalWhitePaint + " банок белой краски и " + totalBrownPaint + " банок коричневой краски»");
 
         // Задача №6
+        int productBananasPieces = 5;
+        int productMilkMilliliters = 200;
+        int iceCreamBriquettePieces = 2;
+        int eggProductsPieces = 4;
+        int oneBananaInGrams = 80;
+        int oneServingOfMilkInGrams = 105;
+        int oneIceCreamInGrams = 100;
+        int oneEggInGrams = 70;
+        int weightSportsBreakfastGrams = (productBananasPieces * oneBananaInGrams) + (productMilkMilliliters * oneServingOfMilkInGrams / 100) + (iceCreamBriquettePieces * oneIceCreamInGrams) + (eggProductsPieces * oneEggInGrams);
+        double weightsportsBreakfastKilograms = weightSportsBreakfastGrams / 1000.0;
+        System.out.println("Вес спортзавтрака в граммах составляет " + weightSportsBreakfastGrams + " гр, а в килограммах " + weightsportsBreakfastKilograms + " кг.");
 
+        // Задача №7
+        int loseTotalWeightKg = 7;
+        float firstWeightGrams = 250f;
+        float secondWeightGrams = 500f;
+        float firstOptionWeightLossDays = (loseTotalWeightKg / firstWeightGrams) * 1000;
+        float secondOptionWeightLossDays = loseTotalWeightKg / secondWeightGrams * 1000;
+        float averageNumberDaysLoseWeight = (firstOptionWeightLossDays + secondOptionWeightLossDays) / 2;
+        System.out.println("Для похудениея спортсмену на 7 кг, при потере веса на " + firstWeightGrams + " грамм в день, составит " + firstOptionWeightLossDays + " дней, а если терять вес по " + secondWeightGrams + " грамм в день, составит " + secondOptionWeightLossDays + " дней.");
+        System.out.println("В среднем, чтобы добиться результата похудения на 7 кг, потребуется " + averageNumberDaysLoseWeight + " день.");
 
-
-
-
-
-
-
-
-
-
+        // Задача №8
+        int salaryMaria = 67_760;
+        int salaryDenis = 83_690;
+        int salaryKristi = 76_230;
+        int salaryIndexingMaria =  (int) (salaryMaria * 1.1);
+        int salaryIndexingDenis = (int) (salaryDenis * 1.1);
+        int salaryIndexingKristi = (int) (salaryKristi * 1.1);
+        int annualIncome = 12;
+        int annualSalaryMaria = salaryMaria * annualIncome;
+        int annualSalaryDenis = salaryDenis * annualIncome;
+        int annualSalaryKristi = salaryKristi * annualIncome;
+        int annualSalaryAfterPromotionMaria = salaryIndexingMaria * annualIncome;
+        int annualSalaryAfterPromotionDenis = salaryIndexingDenis * annualIncome;
+        int annualSalaryAfterPromotionKristi = salaryIndexingKristi * annualIncome;
+        int differenceAnnualIncomeMaria = annualSalaryAfterPromotionMaria - annualSalaryMaria;
+        int differenceAnnualIncomeDenis = annualSalaryAfterPromotionDenis - annualSalaryDenis;
+        int differenceAnnualIncomeKristi = annualSalaryAfterPromotionKristi - annualSalaryKristi;
+        System.out.println("«Маша теперь получает " + salaryIndexingMaria + " рублей. Годовой доход вырос на " + differenceAnnualIncomeMaria + " рублей».");
+        System.out.println("«Денис теперь получает " + salaryIndexingDenis + " рублей. Годовой доход вырос на " + differenceAnnualIncomeDenis + " рублей».");
+        System.out.println("«Кристина теперь получает " + salaryIndexingKristi + " рублей. Годовой доход вырос на " + differenceAnnualIncomeKristi + " рублей».");
     }
 }
